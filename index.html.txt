@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Revpriya Technologies | HR Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header img {
+            width: 180px;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            background: #082b45;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .services {
+            background: #f4f6f8;
+        }
+
+        .service-box {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 6px solid #0a3d62;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .service-box h3 {
+            margin: 0;
+        }
+
+        .contact a {
+            color: #0a3d62;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #0a3d62;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width:768px){
+            header img{
+                width:140px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <!-- Upload your logo in same folder and name it logo.png -->
+    <img src="logo.png" alt="Revpriya Technologies Logo">
+    <h1>Revpriya Technologies</h1>
+    <p>Professional HR Solutions | Recruitment | Payroll | Compliance</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Revpriya Technologies is a Chennai-based HR solutions company offering end-to-end 
+        recruitment, payroll, compliance, and HR management services for IT, Non-IT, 
+        Healthcare, and Manufacturing industries.
+    </p>
+</section>
+
+<section id="services" class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+        <h3>📌 Recruitment (IT / Non-IT / Healthcare / Manufacturing)</h3>
+    </div>
+
+    <div class="service-box">
+        <h3>💰 Payroll & Compliance</h3>
+    </div>
+
+    <div class="service-box">
+        <h3>📑 HR Policies & Documentation</h3>
+    </div>
+
+    <div class="service-box">
+        <h3>📊 Performance Management System Setup</h3>
+    </div>
+
+    <div class="service-box">
+        <h3>🤝 Contract Staffing</h3>
+    </div>
+
+    <div class="service-box">
+        <h3>🏢 HR Outsourcing for SMEs</h3>
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Location: Chennai</p>
+    <p>📧 Email: <a href="mailto:rp@gmail.com">rp@gmail.com</a></p>
+</section>
+
+<footer>
+    © 2026 Revpriya Technologies | Chennai
+</footer>
+
+</body>
+</html>
