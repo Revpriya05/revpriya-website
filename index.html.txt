@@ -83,7 +83,7 @@
 <body>
 
 <header>
-    <!-- Upload your logo in same folder and name it logo.png -->
+    <!-- logo.png -->
     <img src="logo.png" alt="Revpriya Technologies Logo">
     <h1>Revpriya Technologies</h1>
     <p>Professional HR Solutions | Recruitment | Payroll | Compliance</p>
