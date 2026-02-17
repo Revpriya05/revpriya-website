@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revpriya Technologies</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/* HEADER */
+header {
+    background: #0a1f44;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 60px;
+}
+
+/* NAVIGATION */
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a i {
+    margin-right: 6px;
+}
+
+nav a:hover {
+    color: #f4c430;
+}
+
+/* SEARCH BOX */
+.search-box {
+    position: relative;
+}
+
+.search-box input {
+    padding: 8px 35px 8px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.search-box i {
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    color: #0a1f44;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    background: url('hero-bg.jpg') center center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 31, 68, 0.75);
+    top: 0;
+    left: 0;
+}
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* GENERAL SECTIONS */
+section {
+    padding: 70px 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #0a1f44;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+/* SERVICES */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: 0.4s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 35px;
+    color: #0a1f44;
+    margin-bottom: 15px;
+}
+
+/* INDUSTRIES */
+.industries {
+    text-align: center;
+}
+
+.industry-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.industry {
+    background: white;
+    width: 260px;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+.industry i {
+    font-size: 40px;
+    color: #0a1f44;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.industry h3 {
+    margin-bottom: 10px;
+}
+
+.industry p {
+    font-size: 14px;
+    color: #555;
+}
+
+.industry:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.industry:hover i {
+    color: #007BFF;
+}
+
+/* FOOTER */
+footer {
+    background: #0a1f44;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Revpriya Technologies Logo" class="logo">
+
+    <nav>
+        <a href="#about"><i class="fas fa-building"></i>About</a>
+        <a href="#services"><i class="fas fa-briefcase"></i>Services</a>
+        <a href="#careers"><i class="fas fa-user-tie"></i>Careers</a>
+        <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+    </nav>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search Services">
+        <i class="fas fa-search"></i>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Strategic HR & Talent Solutions</h1>
+    <p>
+        Providing recruitment, payroll, compliance, contract staffing and HR outsourcing 
+        services across IT, Non-IT, Healthcare & Manufacturing industries.
+    </p>
+</section>
+
+<section class="about" id="about">
+    <img src="about.jpg" alt="About Us">
+    <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+        Revpriya Technologies provides end-to-end HR consulting services including
+        Recruitment, Payroll & Compliance, HR Documentation, and Workforce Management.
+        We partner with businesses to deliver strategic talent solutions.
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <h2 class="section-title"><i class="fas fa-briefcase"></i> Our Services</h2>
+
+    <div class="services">
+
+        <div class="service-card" data-name="recruitment">
+            <i class="fas fa-users"></i>
+            <h3>Recruitment</h3>
+            <p>IT / Non-IT / Healthcare / Manufacturing hiring solutions.</p>
+        </div>
+
+        <div class="service-card" data-name="payroll compliance">
+            <i class="fas fa-money-check-alt"></i>
+            <h3>Payroll & Compliance</h3>
+            <p>Accurate payroll processing and statutory compliance.</p>
+        </div>
+
+        <div class="service-card" data-name="hr policies documentation">
+            <i class="fas fa-file-contract"></i>
+            <h3>HR Policies & Documentation</h3>
+            <p>Complete HR documentation and policy framework setup.</p>
+        </div>
+
+        <div class="service-card" data-name="performance management">
+            <i class="fas fa-chart-line"></i>
+            <h3>Performance Management</h3>
+            <p>Design and implementation of performance systems.</p>
+        </div>
+
+        <div class="service-card" data-name="contract staffing">
+            <i class="fas fa-handshake"></i>
+            <h3>Contract Staffing</h3>
+            <p>Flexible staffing solutions for short and long term needs.</p>
+        </div>
+
+        <div class="service-card" data-name="hr outsourcing">
+            <i class="fas fa-building"></i>
+            <h3>HR Outsourcing for SMEs</h3>
+            <p>End-to-end HR management support for growing businesses.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="industries">
+<h2>Industries We Serve</h2>
+
+<div class="industry-boxes">
+
+<div class="industry">
+<i class="fa-solid fa-laptop-code"></i>
+<h3>IT & Technology</h3>
+<p>Software, IT services & digital transformation.</p>
+</div>
+
+<div class="industry">
+<i class="fa-solid fa-heart-pulse"></i>
+<h3>Healthcare</h3>
+<p>Hospitals, clinics & life science organizations.</p>
+</div>
+
+<div class="industry">
+<i class="fa-solid fa-industry"></i>
+<h3>Manufacturing</h3>
+<p>Production, engineering & supply chain.</p>
+</div>
+
+<div class="industry">
+<i class="fa-solid fa-building"></i>
+<h3>Real Estate</h3>
+<p>Property management & construction firms.</p>
+</div>
+
+<div class="industry">
+<i class="fa-solid fa-cart-shopping"></i>
+<h3>E-Commerce</h3>
+<p>Online retail & logistics operations.</p>
+</div>
+
+<div class="industry">
+<i class="fa-solid fa-tower-cell"></i>
+<h3>Telecommunication</h3>
+<p>Telecom infrastructure & service providers.</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+    © 2026 Revpriya Technologies | All Rights Reserved
+</footer>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+const serviceCards = document.querySelectorAll(".service-card");
+
+searchInput.addEventListener("keyup", function() {
+    let value = this.value.toLowerCase().trim();
+
+    serviceCards.forEach(function(card) {
+        let serviceName = card.getAttribute("data-name");
+
+        if(value === ""){
+            card.style.display = "block";
+        }
+        else if(serviceName.includes(value)){
+            card.style.display = "block";
+        } 
+        else {
+            card.style.display = "none";
+        }
+    });
+});
+</script>
+
+</body>
+</html>
